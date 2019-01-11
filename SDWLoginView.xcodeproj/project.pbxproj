@@ -14,6 +14,9 @@
 		051D19E921E865EA001D157D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 051D19E721E865EA001D157D /* LaunchScreen.storyboard */; };
 		051D19F421E865EA001D157D /* SDWLoginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051D19F321E865EA001D157D /* SDWLoginViewTests.swift */; };
 		051D19FF21E865EA001D157D /* SDWLoginViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051D19FE21E865EA001D157D /* SDWLoginViewUITests.swift */; };
+		051D1A1321E86743001D157D /* SDWLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051D1A1121E86743001D157D /* SDWLViewController.swift */; };
+		051D1A1421E86743001D157D /* SDWLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 051D1A1221E86743001D157D /* SDWLViewController.xib */; };
+		051D1A1621E86900001D157D /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 051D1A1521E86900001D157D /* Resource.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		051D19FA21E865EA001D157D /* SDWLoginViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDWLoginViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		051D19FE21E865EA001D157D /* SDWLoginViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDWLoginViewUITests.swift; sourceTree = "<group>"; };
 		051D1A0021E865EA001D157D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		051D1A1121E86743001D157D /* SDWLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDWLViewController.swift; sourceTree = "<group>"; };
+		051D1A1221E86743001D157D /* SDWLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDWLViewController.xib; sourceTree = "<group>"; };
+		051D1A1521E86900001D157D /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		051D19DD21E865E8001D157D /* SDWLoginView */ = {
 			isa = PBXGroup;
 			children = (
+				051D1A1021E86743001D157D /* Classes */,
 				051D19DE21E865E8001D157D /* AppDelegate.swift */,
 				051D19E021E865E8001D157D /* ViewController.swift */,
 				051D19E221E865E8001D157D /* Main.storyboard */,
@@ -123,6 +130,16 @@
 				051D1A0021E865EA001D157D /* Info.plist */,
 			);
 			path = SDWLoginViewUITests;
+			sourceTree = "<group>";
+		};
+		051D1A1021E86743001D157D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				051D1A1121E86743001D157D /* SDWLViewController.swift */,
+				051D1A1221E86743001D157D /* SDWLViewController.xib */,
+				051D1A1521E86900001D157D /* Resource.bundle */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +246,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				051D1A1421E86743001D157D /* SDWLViewController.xib in Resources */,
 				051D19E921E865EA001D157D /* LaunchScreen.storyboard in Resources */,
 				051D19E621E865EA001D157D /* Assets.xcassets in Resources */,
 				051D19E421E865E8001D157D /* Main.storyboard in Resources */,
+				051D1A1621E86900001D157D /* Resource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				051D1A1321E86743001D157D /* SDWLViewController.swift in Sources */,
 				051D19E121E865E8001D157D /* ViewController.swift in Sources */,
 				051D19DF21E865E8001D157D /* AppDelegate.swift in Sources */,
 			);
@@ -432,6 +452,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SDWLoginView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,7 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.puxin.demos.SDWLoginView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,6 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SDWLoginView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.puxin.demos.SDWLoginView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
